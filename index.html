@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John & Marisa | March 26, 2027</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">J & M</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#details">Details</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#registry">Registry</a></li>
+                <li><a href="#rsvp" class="rsvp-btn">RSVP</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <p class="subtitle">We're getting married</p>
+            <h1>John & Marisa</h1>
+            <p class="date">Friday, March 26th, 2027</p>
+            <p class="location">Ballymagarvey Village, Co. Meath, Ireland</p>
+            <div id="countdown">
+                <div class="time-box"><span id="days">00</span><span class="label">Days</span></div>
+                <div class="time-box"><span id="hours">00</span><span class="label">Hours</span></div>
+                <div class="time-box"><span id="minutes">00</span><span class="label">Mins</span></div>
+                <div class="time-box"><span id="seconds">00</span><span class="label">Secs</span></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="story" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="story-content">
+                <p>We invite you to celebrate our love. Join us for a day of joy, laughter, and new beginnings as we say "I do" in the beautiful countryside of Ireland.</p>
+                <!-- Placeholder for a couple's photo if they had one, using a nice div for now -->
+                <div class="story-image-placeholder">
+                    <span>J & M</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="details" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Wedding Details</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3>The Ceremony</h3>
+                    <p>Friday, March 26th, 2027</p>
+                    <p>2:00 PM</p>
+                    <p>Ballymagarvey Village</p>
+                </div>
+                <div class="detail-card">
+                    <h3>The Reception</h3>
+                    <p>Drinks & Dinner to follow</p>
+                    <p>Ballymagarvey Village</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Accommodation</h3>
+                    <p>Rooms available at the venue</p>
+                    <p>and nearby hotels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <!-- Using placeholders that would be replaced by real photos -->
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="registry" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Registry</h2>
+            <p class="registry-text">Your presence is the greatest gift of all. However, should you wish to honour us with a gift, we have registered at the following stores:</p>
+            <div class="registry-links">
+                <a href="#" class="registry-btn">Amazon Registry</a>
+                <a href="#" class="registry-btn">Honeymoon Fund</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="rsvp" class="section">
+        <div class="container">
+            <h2 class="section-title">RSVP</h2>
+            <p>Please kindly respond by January 26th, 2027</p>
+            <form id="rsvp-form">
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <select id="attendance" required>
+                        <option value="" disabled selected>Will you be attending?</option>
+                        <option value="yes">Joyfully Accepts</option>
+                        <option value="no">Regretfully Declines</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="number" id="guests" min="1" placeholder="Number of Guests">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Dietary Requirements / Message"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send RSVP</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2027 John & Marisa. Made with love.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
