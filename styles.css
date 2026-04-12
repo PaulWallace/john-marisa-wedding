@@ -33,7 +33,10 @@ body {
     font-family: var(--font-body);
     color: var(--text-color);
     line-height: 1.6;
-    background-color: var(--bg-color);
+    background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url('wedding-background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* Typography */
@@ -148,10 +151,8 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.5)), url('https://images.unsplash.com/photo-1519225468359-2996bc01c34c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); /* Placeholder elegant background */
-    background-size: cover;
-    background-position: center;
     padding-top: 60px;
+    background: transparent; /* Background is now on body */
 }
 
 .hero-content {
@@ -212,10 +213,11 @@ p {
 /* Sections */
 .section {
     padding: 6rem 2rem;
+    background-color: rgba(255, 255, 255, 0.7); /* Light overlay for readability */
 }
 
 .alt-bg {
-    background-color: var(--bg-alt-color);
+    background-color: rgba(249, 250, 249, 0.85); /* Slightly more opaque for details */
 }
 
 .container {
