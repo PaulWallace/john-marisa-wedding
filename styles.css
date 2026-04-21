@@ -33,7 +33,7 @@ body {
     font-family: var(--font-body);
     color: var(--text-color);
     line-height: 1.6;
-    background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url('wedding-background.jpeg');
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('wedding-background.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -213,11 +213,11 @@ p {
 /* Sections */
 .section {
     padding: 6rem 2rem;
-    background-color: rgba(255, 255, 255, 0.7); /* Light overlay for readability */
+    background-color: transparent;
 }
 
 .alt-bg {
-    background-color: rgba(249, 250, 249, 0.85); /* Slightly more opaque for details */
+    background-color: transparent;
 }
 
 .container {
@@ -230,6 +230,9 @@ p {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 3rem;
+    border: 1px solid var(--secondary-color);
 }
 
 .story-content p {
