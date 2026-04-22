@@ -1,17 +1,21 @@
 :root {
     /* Color Palette - Classic Minimalist */
-    --primary-color: #556B2F; /* Olive Green */
-    --secondary-color: #A4C8E1; /* Baby Blue Accent */
-    --bg-color: #FFFFFF; /* White */
-    --bg-alt-color: #F9FAF9; /* Very light off-white/green tint for sections */
+    --primary-color: #556B2F;
+    /* Olive Green */
+    --secondary-color: #A4C8E1;
+    /* Baby Blue Accent */
+    --bg-color: #FFFFFF;
+    /* White */
+    --bg-alt-color: #F9FAF9;
+    /* Very light off-white/green tint for sections */
     --text-color: #333333;
     --text-light: #666666;
     --white: #FFFFFF;
-    
+
     /* Typography */
     --font-heading: 'Cormorant Garamond', serif;
     --font-body: 'Montserrat', sans-serif;
-    
+
     /* Spacing */
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
@@ -33,14 +37,16 @@ body {
     font-family: var(--font-body);
     color: var(--text-color);
     line-height: 1.6;
-    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('wedding-background.jpeg');
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('wedding-background.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 /* Typography */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--font-heading);
     font-weight: 400;
 }
@@ -88,7 +94,7 @@ p {
     top: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     z-index: 1000;
     padding: 1rem 0;
     transition: all 0.3s ease;
@@ -152,7 +158,9 @@ p {
     align-items: center;
     text-align: center;
     padding-top: 60px;
-    background: transparent; /* Background is now on body */
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('MarisaAndJohnSaveTheDate.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-content {
@@ -185,7 +193,7 @@ p {
 /* Countdown */
 #countdown {
     display: flex;
-    justify-content: center;
+    justify-content: bottom;
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -270,7 +278,7 @@ p {
 
 .detail-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 /* Gallery */
@@ -334,7 +342,9 @@ p {
     margin-bottom: 1.5rem;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     width: 100%;
     padding: 1rem;
     border: 1px solid #ddd;
@@ -345,7 +355,9 @@ input, select, textarea {
     transition: border-color 0.3s;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
     border-color: var(--secondary-color);
 }
 
@@ -398,7 +410,7 @@ footer {
     h1 {
         font-size: 2.5rem;
     }
-    
+
     .hamburger {
         display: block;
     }
@@ -418,7 +430,7 @@ footer {
     .nav-links.active {
         right: 0;
     }
-    
+
     .hero-content {
         margin: 1rem;
         padding: 2rem 1rem;
@@ -426,6 +438,13 @@ footer {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
