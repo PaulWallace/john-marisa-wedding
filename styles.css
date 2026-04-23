@@ -193,9 +193,15 @@ p {
 /* Countdown */
 #countdown {
     display: flex;
-    justify-content: bottom;
+    justify-content: center;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+}
+
+#countdown-section {
+    padding: 3rem 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .time-box {
