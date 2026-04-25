@@ -37,7 +37,7 @@ body {
     font-family: var(--font-body);
     color: var(--text-color);
     line-height: 1.6;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('wedding-background.jpeg');
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('WeddingBackgroundPortrait.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -158,7 +158,7 @@ p {
     align-items: center;
     text-align: center;
     padding-top: 60px;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('MarisaAndJohnSaveTheDate.jpeg');
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('MarisaAndJohnSaveTheDatePortrait.png');
     background-size: cover;
     background-position: center;
 }
