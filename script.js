@@ -42,8 +42,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // FAQ Accordion
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const faqItem = question.parentElement;
+            const isActive = faqItem.classList.contains('active');
+
+            // Close all other FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Toggle current FAQ item
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        });
+    });
+
     // RSVP Form Handling
-    const rsvpForm = document.getElementById('rsvp-form');
+    /* const rsvpForm = document.getElementById('rsvp-form');
     rsvpForm.addEventListener('submit', (e) => {
         e.preventDefault();
 
@@ -66,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert("Thank you for your RSVP! We can't wait to see you.");
             }, 1000);
         }, 1500);
-    });
+    }); */
 
     // Smooth Scroll for Anchor Links (Polyfill-like behavior if needed, but CSS handles most)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
