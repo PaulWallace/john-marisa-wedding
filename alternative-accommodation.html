@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternative Accommodation | John & Marisa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .accom-intro {
+            max-width: 720px;
+            margin: 0 auto 1rem;
+            text-align: center;
+            line-height: 1.8;
+            color: var(--text, #555);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .taxi-notice {
+            background: var(--white, #fff);
+            border-left: 3px solid var(--primary, #b8a99a);
+            padding: 1.25rem 1.5rem;
+            margin: 2rem auto;
+            max-width: 720px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            color: var(--text, #555);
+            line-height: 1.8;
+        }
+
+        .taxi-notice ul {
+            margin: 0.5rem 0 0 1.25rem;
+            padding: 0;
+        }
+
+        .taxi-notice li {
+            margin-bottom: 0.4rem;
+        }
+
+        .accom-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .accom-card {
+            background: var(--white, #fff);
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .accom-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .accom-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--dark, #333);
+            margin: 0 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(184, 169, 154, 0.4);
+        }
+
+        .accom-card .accom-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            color: var(--text, #555);
+            margin-bottom: 0.4rem;
+        }
+
+        .accom-card .accom-label {
+            font-weight: 500;
+            color: var(--primary, #b8a99a);
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 0.05em;
+            margin-right: 0.5rem;
+            white-space: nowrap;
+        }
+
+        .accom-card .accom-value {
+            text-align: right;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            color: var(--primary, #b8a99a);
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">J & M</a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#story">Our Story</a></li>
+                <li><a href="index.html#details">Details</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Alternative Accommodation</h2>
+
+            <p class="accom-intro">
+                While we would love for everyone to stay with us at the venue, we know some guests may prefer
+                alternative options. There is plenty of accommodation nearby to suit a range of budgets, all within
+                a short drive of Ballymagarvey Village.
+            </p>
+
+            <p class="accom-intro">
+                Please note that Ballymagarvey Village is in a rural location, and there is no organised transport
+                to off-site accommodation.
+            </p>
+
+            <div class="taxi-notice">
+                <strong>Getting back to your accommodation:</strong>
+                <ul>
+                    <li>We strongly recommend pre-booking taxis in advance, particularly for late-night collections.</li>
+                    <li>The venue can provide local taxi numbers — just ask at reception on the day.</li>
+                    <li>If possible, consider sharing taxis with other guests staying nearby.</li>
+                </ul>
+            </div>
+
+            <div class="accom-grid">
+
+                <div class="accom-card">
+                    <h3>Ardboyne Hotel</h3>
+                    <div class="accom-row"><span class="accom-label">Location</span><span class="accom-value">Navan</span></div>
+                    <div class="accom-row"><span class="accom-label">Distance</span><span class="accom-value">~10 mins</span></div>
+                    <div class="accom-row"><span class="accom-label">Approx. Cost</span><span class="accom-value">€90–€130 per night</span></div>
+                </div>
+
+                <div class="accom-card">
+                    <h3>Newgrange Hotel</h3>
+                    <div class="accom-row"><span class="accom-label">Location</span><span class="accom-value">Navan town centre</span></div>
+                    <div class="accom-row"><span class="accom-label">Distance</span><span class="accom-value">~10–12 mins</span></div>
+                    <div class="accom-row"><span class="accom-label">Approx. Cost</span><span class="accom-value">€100–€140 per night</span></div>
+                </div>
+
+                <div class="accom-card">
+                    <h3>Bellinter House Hotel &amp; Spa</h3>
+                    <div class="accom-row"><span class="accom-label">Location</span><span class="accom-value">Near Navan</span></div>
+                    <div class="accom-row"><span class="accom-label">Distance</span><span class="accom-value">~10–12 mins</span></div>
+                    <div class="accom-row"><span class="accom-label">Approx. Cost</span><span class="accom-value">€140–€200 per night</span></div>
+                </div>
+
+                <div class="accom-card">
+                    <h3>Trim Castle Hotel</h3>
+                    <div class="accom-row"><span class="accom-label">Location</span><span class="accom-value">Trim</span></div>
+                    <div class="accom-row"><span class="accom-label">Distance</span><span class="accom-value">~20 mins</span></div>
+                    <div class="accom-row"><span class="accom-label">Approx. Cost</span><span class="accom-value">€150–€200 per night</span></div>
+                </div>
+
+                <div class="accom-card">
+                    <h3>Castle Arch Hotel</h3>
+                    <div class="accom-row"><span class="accom-label">Location</span><span class="accom-value">Trim</span></div>
+                    <div class="accom-row"><span class="accom-label">Distance</span><span class="accom-value">~20 mins</span></div>
+                    <div class="accom-row"><span class="accom-label">Approx. Cost</span><span class="accom-value">€90–€120 per night</span></div>
+                </div>
+
+                <div class="accom-card">
+                    <h3>Daly's of Donore</h3>
+                    <div class="accom-row"><span class="accom-label">Location</span><span class="accom-value">Donore</span></div>
+                    <div class="accom-row"><span class="accom-label">Distance</span><span class="accom-value">~10–12 mins</span></div>
+                    <div class="accom-row"><span class="accom-label">Approx. Cost</span><span class="accom-value">€90–€130 per night</span></div>
+                </div>
+
+                <div class="accom-card">
+                    <h3>The Village Hotel Bettystown</h3>
+                    <div class="accom-row"><span class="accom-label">Location</span><span class="accom-value">Coast (near Drogheda)</span></div>
+                    <div class="accom-row"><span class="accom-label">Distance</span><span class="accom-value">~25 mins</span></div>
+                    <div class="accom-row"><span class="accom-label">Approx. Cost</span><span class="accom-value">€90–€130 per night</span></div>
+                </div>
+
+                <div class="accom-card">
+                    <h3>Killeen Castle</h3>
+                    <div class="accom-row"><span class="accom-label">Location</span><span class="accom-value">Near Dunshaughlin</span></div>
+                    <div class="accom-row"><span class="accom-label">Distance</span><span class="accom-value">~20–25 mins</span></div>
+                    <div class="accom-row"><span class="accom-label">Approx. Cost</span><span class="accom-value">€130–€180 per night</span></div>
+                </div>
+
+                <div class="accom-card">
+                    <h3>Nanny's</h3>
+                    <div class="accom-row"><span class="accom-label">Location</span><span class="accom-value">Duleek</span></div>
+                    <div class="accom-row"><span class="accom-label">Distance</span><span class="accom-value">~20 mins</span></div>
+                    <div class="accom-row"><span class="accom-label">Approx. Cost</span><span class="accom-value">€120–€150 per night</span></div>
+                </div>
+
+                <div class="accom-card">
+                    <h3>Stone Lodge Bed &amp; Breakfast</h3>
+                    <div class="accom-row"><span class="accom-label">Location</span><span class="accom-value">Very close</span></div>
+                    <div class="accom-row"><span class="accom-label">Distance</span><span class="accom-value">~2–3 mins</span></div>
+                    <div class="accom-row"><span class="accom-label">Approx. Cost</span><span class="accom-value">€80–€120 per night</span></div>
+                </div>
+
+            </div>
+
+            <a href="index.html" class="back-link">← Back to main page</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2027 John &amp; Marisa. Made with love.</p>
+    </footer>
+
+    <script src="script-accommodation.js"></script>
+</body>
+
+</html>
