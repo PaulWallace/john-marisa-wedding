@@ -292,7 +292,7 @@ p {
 }
 
 .detail-card {
-    background: var(--white);
+    background: rgba(255, 255, 255, 0.85);
     padding: 2rem;
     border: 1px solid #eee;
     transition: transform 0.3s;
